@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Главная</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <!--Header--->
+    <header class="text-corp-dark pb-4 pt-3">
+      <div class="container-fluid">
+        <div class="row fw-semibold px-5 mx-5">
+          <div class="col-4">
+            <p class="text-uppercase mb-0">скидка 10% первым клиентам</p>
+          </div>
+          <div class="col-4">
+            <p class="text-uppercase text-center mb-0">бесплатная доставка
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                <path d="M5.14137 8.74699V19.6544H19.0236V8.74699H16.0488V16.6797L12.0825 14.6965L8.11613 16.6797V8.74699H5.14137ZM5.14137 21.6376C4.596 21.6376 4.12897 21.4432 3.74026 21.0545C3.35156 20.6658 3.15754 20.1991 3.1582 19.6544V7.2844C3.1582 7.05303 3.19555 6.82993 3.27025 6.61508C3.34495 6.40024 3.45634 6.20192 3.60442 6.02013L4.8439 4.50797C5.02569 4.2766 5.25276 4.09877 5.52512 3.97449C5.79747 3.85022 6.08272 3.78841 6.38085 3.78907H17.7841C18.0815 3.78907 18.3668 3.85121 18.6398 3.97549C18.9128 4.09976 19.1399 4.27726 19.321 4.50797L20.5605 6.02013C20.7092 6.20192 20.821 6.40024 20.8957 6.61508C20.9704 6.82993 21.0074 7.05303 21.0067 7.2844V19.6544C21.0067 20.1998 20.8124 20.6668 20.4237 21.0555C20.035 21.4442 19.5683 21.6382 19.0236 21.6376H5.14137ZM5.53801 6.76382H18.6269L17.7841 5.77224H6.38085L5.53801 6.76382ZM10.0993 8.74699V13.457L12.0825 12.4654L14.0656 13.457V8.74699H10.0993Z" fill="#254D4F"/>
+              </svg>
+            </p>
+          </div>
+          <div class="col-4">
+            <p class="text-uppercase text-end mb-0">1500+ довольных клиентов</p>
+          </div>
+        </div>
+        <hr class="text-corp opacity-100 w-100 mx-5">
+        <nav class="navbar navbar-expand-lg px-5 mx-5">
+          <a class="navbar-brand" href="#"><img class="img-fluid" src="images/logo.png" alt=""></a>
+          <div class="d-lg-none ms-auto">
+            <div class="d-flex align-items-center">
+              <a class="text-decoration-none text-corp-dark fs-5 me-4" href="#"><i class="bi bi-search"></i></a>
+              <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">RU</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">EN</a>
+                  <a class="dropdown-item" href="#">UZ</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav ms-auto text-end text-lg-start">
+              <li class="nav-item pe-4">
+                <a class="nav-link text-corp-dark" href="#">Главная
+                  <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item pe-4">
+                <a class="nav-link text-corp-dark" href="#">О нас</a>
+              </li>
+              <li class="nav-item pe-4">
+                <a class="nav-link text-corp-dark" href="#">Клиенты</a>
+              </li>
+              <li class="nav-item pe-4">
+                <a class="nav-link text-corp-dark" href="#">FAQ</a>
+              </li>
+              <li class="nav-item pe-4">
+                <a class="nav-link text-corp-dark" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-lg-block d-none">
+            <div class="d-flex align-items-center">
+              <a class="text-decoration-none text-corp-dark fs-5 me-4" href="#"><i class="bi bi-search"></i></a>
+              <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">RU</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">EN</a>
+                  <a class="dropdown-item" href="#">UZ</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!--Banner--->
+    <section class="index-banner">
+      <div class="container-fluid px-lg-0">
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="img-fluid" src="images/index/banner.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption text-start d-flex flex-column justify-content-center align-items-start h-100">
+                <h1 class="fw-bold lh-base mb-lg-5 mb-3">Мы воплощаем бренд в <br>каждой детали</h1>
+                <a class="btn btn-primary rounded-5 px-lg-5 py-lg-3" href="#">Заказать образец</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="img-fluid" src="images/index/banner.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption text-start d-flex flex-column justify-content-center align-items-start h-100">
+                <h1 class="fw-bold lh-base mb-lg-5 mb-3">Мы воплощаем бренд в <br>каждой детали</h1>
+                <a class="btn btn-primary rounded-5 px-lg-5 py-lg-3" href="#">Заказать образец</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="img-fluid" src="images/index/banner.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption text-start d-flex flex-column justify-content-center align-items-start h-100">
+                <h1 class="fw-bold lh-base mb-lg-5 mb-3">Мы воплощаем бренд в <br>каждой детали</h1>
+                <a class="btn btn-primary rounded-5 px-lg-5 py-lg-3" href="#">Заказать образец</a>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--Our products--->
+    <section class="py-5 text-corp-dark">
+      <div class="container-fluid">
+        <div class="row mb-4 px-5">
+          <div class="col-6">
+            <div class="d-flex flex-column justify-content-center h-100">
+              <h1 class="fw-semibold">Наша продукция</h1>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="d-flex flex-column justify-content-center h-100 text-end">
+              <a href="#" class="fw-medium text-decoration-none text-corp-dark fs-5">Просмотреть все<i class="bi bi-arrow-right-short"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="slider-products">
+          <div class="rounded-5 shadow px-4 py-3">
+            <img class="img-fluid" src="images/index/notebook.png" alt="">
+            <div class="row gx-3">
+              <div class="col-9">
+                <h2 class="fw-semibold lh-base mb-0">Бизнес <br>продукция</h2>
+              </div>
+              <div class="col-3">
+                <div class="d-flex align-items-end h-100 pb-2">
+                  <a class="text-decoration-none" href="#"><img class="img-fluid" src="images/icons/right-corp-dark.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-5 shadow px-4 py-3">
+            <img class="img-fluid" src="images/index/hotel.png" alt="">
+            <div class="row gx-3">
+              <div class="col-9">
+                <h2 class="fw-semibold lh-base mb-0">Для <br>гостиниц</h2>
+              </div>
+              <div class="col-3">
+                <div class="d-flex align-items-end h-100 pb-2">
+                  <a class="text-decoration-none" href="#"><img class="img-fluid" src="images/icons/right-corp-dark.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-5 shadow px-4 py-3">
+            <img class="img-fluid" src="images/index/restaurant.png" alt="">
+            <div class="row gx-3">
+              <div class="col-9">
+                <h2 class="fw-semibold lh-base mb-0">Для <br>ресторанов</h2>
+              </div>
+              <div class="col-3">
+                <div class="d-flex align-items-end h-100 pb-2">
+                  <a class="text-decoration-none" href="#"><img class="img-fluid" src="images/icons/right-corp-dark.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-5 shadow px-4 py-3">
+            <img class="img-fluid" src="images/index/notebook.png" alt="">
+            <div class="row gx-3">
+              <div class="col-9">
+                <h2 class="fw-semibold lh-base mb-0">Бизнес <br>продукция</h2>
+              </div>
+              <div class="col-3">
+                <div class="d-flex align-items-end h-100 pb-2">
+                  <a class="text-decoration-none" href="#"><img class="img-fluid" src="images/icons/right-corp-dark.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="position-relative">
+          <p class="left-products position-absolute">
+            <svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
+              <circle cx="32.6542" cy="32.7558" r="32.2265" fill="#E62129"/>
+              <path d="M43.5312 33.4853H21.25" stroke="white" stroke-width="3.96634" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M30.3027 24.4336L21.251 33.4853L30.3027 42.5371" stroke="white" stroke-width="3.96634" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </p>
+          <p class="right-products position-absolute">
+            <svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
+              <circle cx="32.2266" cy="32.2266" r="32.2265" transform="rotate(-180 32.2266 32.2266)" fill="#E62129"/>
+              <path d="M21.3496 31.4971H43.6308" stroke="white" stroke-width="3.96634" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M34.5781 40.5488L43.6299 31.4971L34.5781 22.4454" stroke="white" stroke-width="3.96634" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--Our services--->
+    <section class="py-5 text-corp-dark">
+      <div class="container-fluid">
+        <div class="row mb-4 px-5">
+          <div class="col-6">
+            <div class="d-flex flex-column justify-content-center h-100">
+              <h1 class="fw-semibold">Наши услуги</h1>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="d-flex flex-column justify-content-center h-100 text-end">
+              <a href="#" class="fw-medium text-decoration-none text-corp-dark fs-5">Просмотреть все<i class="bi bi-arrow-right-short"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="slider-services">
+          <div class="rounded-5 shadow pb-3 h-100 position-relative">
+            <img class="img-fluid rounded-5" src="images/index/souvenir.png" alt="">
+            <h4 class="fw-semibold lh-base mb-0 py-3 ps-4">Упаковочная <br>сувенирная <br>продукция</h4>
+            <div class="click-btn">
+              <a class="position-absolute text-decoration-none" href="#"><img class="img-fluid" src="images/icons/right-bold.png" alt=""></a>
+            </div>
+          </div>
+          <div class="rounded-5 shadow pb-3 h-100 position-relative">
+            <img class="img-fluid rounded-5" src="images/index/uniforms.png" alt="">
+            <h4 class="fw-semibold lh-base mb-0 py-3 ps-4">Униформа и <br>текстильная <br>продукция</h4>
+            <div class="click-btn">
+              <a class="position-absolute text-decoration-none" href="#"><img class="img-fluid" src="images/icons/right-bold.png" alt=""></a>
+            </div>
+          </div>
+          <div class="rounded-5 shadow pb-3 h-100 position-relative">
+            <img class="img-fluid rounded-5" src="images/index/carpentry.png" alt="">
+            <h4 class="fw-semibold lh-base mb-0 py-3 ps-4">Столярное <br>производство</h4>
+            <div class="click-btn">
+              <a class="position-absolute text-decoration-none" href="#"><img class="img-fluid" src="images/icons/right-bold.png" alt=""></a>
+            </div>
+          </div>
+          <div class="rounded-5 shadow pb-3 h-100 position-relative">
+            <img class="img-fluid rounded-5" src="images/index/polygraphy.png" alt="">
+            <h4 class="fw-semibold lh-base mb-0 py-3 ps-4">Полиграфия</h4>
+            <div class="click-btn">
+              <a class="position-absolute text-decoration-none" href="#"><img class="img-fluid" src="images/icons/right-bold.png" alt=""></a>
+            </div>
+          </div>
+
+          <div class="rounded-5 shadow pb-3 h-100 position-relative">
+            <img class="img-fluid rounded-5" src="images/index/food.png" alt="">
+            <h4 class="fw-semibold lh-base mb-0 py-3 ps-4">Food съемка</h4>
+            <div class="click-btn">
+              <a class="position-absolute text-decoration-none" href="#"><img class="img-fluid" src="images/icons/right-bold.png" alt=""></a>
+            </div>
+          </div>
+          <div class="rounded-5 shadow pb-3 h-100 position-relative">
+            <img class="img-fluid rounded-5" src="images/index/uv.png" alt="">
+            <h4 class="fw-semibold lh-base mb-0 py-3 ps-4">Ультрафиолетовая <br>печать</h4>
+            <div class="click-btn">
+              <a class="position-absolute text-decoration-none" href="#"><img class="img-fluid" src="images/icons/right-bold.png" alt=""></a>
+            </div>
+          </div>
+          <div class="rounded-5 shadow pb-3 h-100 position-relative">
+            <img class="img-fluid rounded-5" src="images/index/laser.png" alt="">
+            <h4 class="fw-semibold lh-base mb-0 py-3 ps-4">Лазерная резка и гравировка</h4>
+            <div class="click-btn">
+              <a class="position-absolute text-decoration-none" href="#"><img class="img-fluid" src="images/icons/right-bold.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="position-relative">
+          <p class="left-services position-absolute">
+            <svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
+              <circle cx="32.6542" cy="32.7558" r="32.2265" fill="#E62129"/>
+              <path d="M43.5312 33.4853H21.25" stroke="white" stroke-width="3.96634" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M30.3027 24.4336L21.251 33.4853L30.3027 42.5371" stroke="white" stroke-width="3.96634" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </p>
+          <p class="right-services position-absolute">
+            <svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
+              <circle cx="32.2266" cy="32.2266" r="32.2265" transform="rotate(-180 32.2266 32.2266)" fill="#E62129"/>
+              <path d="M21.3496 31.4971H43.6308" stroke="white" stroke-width="3.96634" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M34.5781 40.5488L43.6299 31.4971L34.5781 22.4454" stroke="white" stroke-width="3.96634" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--Our clients--->
+    <section class="bg-cover h-100 py-5 text-white index-clients" style="background-image: url(images/index/clients.png)">
+      <div class="container-fluid">
+        <div class="px-lg-5">
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="d-flex flex-column justify-content-center h-100 text-lg-start text-center">
+                <h1 class="fw-semibold mb-4">Наши клиенты</h1>
+                <p class="lh-base mb-4"><span class="fw-semibold">Компания Aksessori</span> - c 2013 года компания занимается изготовлением бизнес-сувениров, подарочной продукции, аксессуаров для офисов и ресторанов среднего и премиум сегментов в Узбекистане.</p>
+                <div class="mt-3 d-lg-block d-none">
+                  <a class="btn btn-light rounded-4 fw-semibold px-5 py-3" href="#">Все клиенты<i class="bi bi-arrow-right-short"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7 d-lg-block d-none">
+              <div class="ps-5">
+                <div class="row g-5">
+                  <div class="col-lg-6">
+                    <img class="img-fluid d-block mx-auto" src="images/index/logos/istanbul.png" alt="">
+                  </div>
+                  <div class="col-lg-6">
+                    <img class="img-fluid d-block mx-auto" src="images/index/logos/testo.png" alt="">
+                  </div>
+                  <div class="col-lg-6">
+                    <img class="img-fluid d-block mx-auto" src="images/index/logos/elma.png" alt="">
+                  </div>
+                  <div class="col-lg-6">
+                    <img class="img-fluid d-block mx-auto" src="images/index/logos/strawberry.png" alt="">
+                  </div>
+                  <div class="col-lg-6">
+                    <img class="img-fluid d-block mx-auto" src="images/index/logos/schindler.png" alt="">
+                  </div>
+                  <div class="col-lg-6">
+                    <img class="img-fluid d-block mx-auto" src="images/index/logos/masterfood.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-lg-none">
+          <div class="slider-clients">
+            <img class="img-fluid" src="images/index/logos/istanbul.png" alt="">
+            <img class="img-fluid" src="images/index/logos/testo.png" alt="">
+            <img class="img-fluid" src="images/index/logos/elma.png" alt="">
+            <img class="img-fluid" src="images/index/logos/strawberry.png" alt="">
+            <img class="img-fluid" src="images/index/logos/schindler.png" alt="">
+            <img class="img-fluid" src="images/index/logos/masterfood.png" alt="">
+          </div>
+          <div class="position-relative">
+            <p class="left-clients position-absolute">
+              <svg xmlns="http://www.w3.org/2000/svg" width="27" height="26" viewBox="0 0 27 26" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4525 25.4924C6.57445 25.4924 0.998701 20.0096 0.998701 13.2462C0.998701 6.48282 6.57445 1 13.4525 1C20.3305 1 25.9062 6.48282 25.9062 13.2462C25.9062 20.0096 20.3305 25.4924 13.4525 25.4924Z" stroke="white" stroke-width="0.415126"/>
+                <path d="M13.8801 9.30146C14.183 8.9998 14.6727 8.9998 14.9755 9.30146C15.2799 9.60474 15.2799 10.0977 14.9755 10.401L12.8003 12.568C12.3117 13.0547 12.3117 13.8458 12.8003 14.3325L14.9755 16.4995C15.2799 16.8028 15.2799 17.2957 14.9755 17.599C14.6727 17.9007 14.183 17.9007 13.8801 17.599L10.6012 14.3325C10.1126 13.8458 10.1126 13.0547 10.6012 12.568L13.8801 9.30146Z" fill="white"/>
+              </svg>
+            </p>
+            <p class="right-clients position-absolute">
+              <svg xmlns="http://www.w3.org/2000/svg" width="27" height="26" viewBox="0 0 27 26" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4538 25.4924C20.3318 25.4924 25.9075 20.0096 25.9075 13.2462C25.9075 6.48282 20.3318 1 13.4538 1C6.57574 1 1 6.48282 1 13.2462C1 20.0096 6.57574 25.4924 13.4538 25.4924Z" stroke="white" stroke-width="0.415126"/>
+                <path d="M13.0261 9.30146C12.7233 8.9998 12.2336 8.9998 11.9308 9.30146C11.6263 9.60474 11.6263 10.0977 11.9308 10.401L14.106 12.568C14.5946 13.0547 14.5946 13.8458 14.106 14.3325L11.9308 16.4995C11.6263 16.8028 11.6263 17.2957 11.9308 17.599C12.2336 17.9007 12.7233 17.9007 13.0261 17.599L16.305 14.3325C16.7936 13.8458 16.7936 13.0547 16.305 12.568L13.0261 9.30146Z" fill="white"/>
+              </svg>
+            </p>
+          </div>
+          <div class="mt-4 text-center">
+            <a class="btn btn-light rounded-0 fw-semibold px-4 py-2" href="#">Все клиенты<i class="bi bi-arrow-right-short"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer--->
+    <footer class="pt-5 pb-4 text-corp-dark">
+      <div class="container-fluid">
+        <div class="row gy-4">
+          <div class="col-lg-5">
+            <div class="d-flex flex-column justify-content-center align-items-start h-100 pe-lg-5">
+              <img class="img-fluid mb-4" src="images/logo.png" alt="">
+              <p class="mb-4"> С 2013 года компания Akses занимается изготовлением бизнес-сувениров, подарочной продукции, аксессуаров для офисов и ресторанов среднего и премиум сегментов в Узбекистане.</p>
+              <div class="row gy-3">
+                <div class="col-6">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-telephone-fill pe-lg-3 pe-1"></i>
+                    <div class="">
+                      <p class="fw-medium mb-0">+998 (99)-828-19-94</p>
+                      <p class="fw-medium mb-0">+998 (97)-754-07-88</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-geo-alt-fill pe-lg-3 pe-1"></i>
+                    <p class="fw-medium mb-1">г. Ташкент, 1-й тупик Бешагач, 41</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="ps-lg-5">
+              <div class="row w-100 gy-4 gx-5">
+                <div class="col-6">
+                  <h5 class="fw-semibold">Для клиентов</h5>
+                  <hr class="text-corp-dark opacity-100">
+                  <ul class="list-unstyled pt-lg-3">
+                    <li class="mb-lg-2 mb-0">
+                      <a class="text-corp-dark text-decoration-none" href="#">Контакты</a>
+                    </li>
+                    <li class="mb-lg-2 mb-0">
+                      <a class="text-corp-dark text-decoration-none" href="#">Вопросы и ответы</a>
+                    </li>
+                    <li class="mb-lg-2 mb-0">
+                      <a class="text-corp-dark text-decoration-none" href="#">Возврат</a>
+                    </li>
+                    <li class="">
+                      <a class="text-corp-dark text-decoration-none" href="#">Предложения и скидки</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-6">
+                  <h5 class="fw-semibold">Для партнеров</h5>
+                  <hr class="text-corp-dark opacity-100">
+                  <ul class="list-unstyled pt-lg-3">
+                    <li class="mb-lg-2 mb-0">
+                      <a class="text-corp-dark text-decoration-none" href="#">Сотрудничество</a>
+                    </li>
+                    <li class="">
+                      <a class="text-corp-dark text-decoration-none" href="#">Оптовая продажа</a>
+                    </li>
+                  </ul>
+                  <h5 class="fw-semibold mb-lg-4 mb-2">Подписывайтесь на нас</h5>
+                  <ul class="list-inline mb-0">
+                    <li class="list-inline-item">
+                      <a href="#"><img class="img-fluid" src="images/icons/telegram.png" alt=""> </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#"><img class="img-fluid" src="images/icons/facebook.png" alt=""> </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#"><img class="img-fluid" src="images/icons/instagram.png" alt=""> </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js" integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+
+      $(document).ready(function(){
+        $('.slider-products').slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          arrows: false,
+          dots: false,
+          responsive:
+        [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            }
+          }
+        ]
+        })
+
+        $('.slider-services').slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          arrows: false,
+          dots: false,
+          responsive:
+        [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            }
+          }
+        ]
+        })
+
+        $('.slider-clients').slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          arrows: false,
+          dots: false
+        })
+      })
+
+        $('.left-products').click(function(){
+          $('.slider-products').slick('slickPrev')
+        })
+
+        $('.right-products').click(function(){
+          $('.slider-products').slick('slickNext')
+        })
+
+        $('.left-services').click(function(){
+          $('.slider-services').slick('slickPrev')
+        })
+
+        $('.right-services').click(function(){
+          $('.slider-services').slick('slickNext')
+        })
+
+        $('.left-clients').click(function(){
+          $('.slider-clients').slick('slickPrev')
+        })
+
+        $('.right-clients').click(function(){
+          $('.slider-clients').slick('slickNext')
+        })
+    </script>
+  </body>
+</html>
